@@ -1,0 +1,116 @@
+body {
+    background-color: #00bfff;
+    padding: 20px;
+    margin: 0;
+    background-image: url(./Images/simplegive.JPG);
+    background-repeat: no-repeat;
+    background-position: 0% -5.5%;
+    background-size: 25%;
+    box-sizing: border-box;
+    min-height: 100vh;
+  }
+  .container
+  {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .bubbles
+  {
+    position: relative;
+    display: flex;
+  }
+  .bubbles span
+  {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #05050544,
+    0 0 50px #ffffff,
+    0 0 1000px #ffffff;
+    animation: animate1 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+  }
+  .bubbles span:nth-child(even)
+  {
+    background: #87ceeb;
+    box-shadow: 0 0 0 10px #4682b4,
+    0 0 50px #87ceeb,
+    0 0 1000px #87ceeb;
+  }
+  @keyframes animate1
+  {
+    0%
+    {
+      transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+      transform: translateY(-10vh) scale(1);
+    }
+  }
+  h1, p, ul {
+    font-family: sans-serif;
+  }
+  h1 {
+    font-family: Colonna MT;
+  }
+  h2 {
+    font-family: Comic Sans MS;
+    font-size: 40px;
+    animation: animate2 1s ease-in-out infinite alternate;
+  }
+  @keyframes animate2
+  {
+    from
+    {
+      text-shadow: 0 0 20px #335fee;
+    }
+    to 
+    {
+      text-shadow: 0 0 30px #335fee, 0 0 10px #335fee;
+    }
+  }
+  li {
+    font-family: cursive;
+  }
+  h1 {
+    color: #FFF;
+  }
+  ul.header li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    font-family: Geneva;
+    font-size: 20px; 
+  }
+  ul.header {
+    background-color: #335fee;
+    padding: 0;
+  }
+  ul.header li a {
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+  }
+  .content {
+    background-color: #FFF;
+    padding: 20px;
+  }
+  .content h2 {
+    padding: 0;
+    margin: 0;
+  }
+  .content li {
+    margin-bottom: 10px;
+    color: #070707;
+  }
+  .active {
+      background-color: #f8f8ff;
+  }
